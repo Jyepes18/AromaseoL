@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+header {
+  background-image: url(../img/index/fondo.svg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.menu .logo {
+  font-weight: 700;
+  font-size: 25px;
+  color: #fff;
+}
+
+.menu .navbar ul {
+  display: flex;
+  align-items: center;
+}
+
+.menu .navbar ul li {
+  position: relative;
+}
+
+.menu .navbar ul li a {
+  font-size: 18px;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 25px;
+  display: block;
+  text-decoration: none;
+  margin-right: 1em;
+}
+
+.menu .navbar ul li a:hover {
+  background-color: #369bd1;
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.header-content img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+}
+
+.form {
+  background: #e5e5f7;
+  margin-top: -100px;
+  width: 90%;
+  max-width: 400px;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: auto;
+}
+
+.form_title {
+  font-size: 25px;
+  margin-bottom: 1em;
+}
+
+.form input[type="email"],
+.form input[type="password"] {
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form input[type="email"]:focus,
+.form input[type="password"]:focus {
+  outline: none;
+  border-color: #369bd1;
+}
+
+.form button {
+  width: 100%;
+  padding: 1em;
+  background-color: #369bd1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #2679a8;
+}
+
+.caja {
+  width: 100%;
+  max-width: 1000px;
+  margin: 100px auto;
+  background-color: #4db3f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input {
+  margin: 15px;
+  width: 88%;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+}
+
+.textbox-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.textarea-container {
+  justify-content: space-between;
+  margin-bottom: 15px; /* Espacio entre los textareas */
+}
+
+.textarea-container label {
+  display: block; 
+  margin-bottom: 5px; 
+}
+
+.msgA,
+.msgU {
+  width: 100%;
+  min-width: 400px;
+  max-width: 400px;
+  min-height: 80px;
+  max-height: 200px;
+  padding: 8px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+p {
+  color: #fff;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media all and (max-width: 991px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .menu label {
+    display: initial;
+  }
+
+  .menu .navbar {
+    display: none;
+    flex-direction: column;
+    background-color: #148afa;
+    width: 100%;
+  }
+
+  .menu .navbar ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu .navbar ul li {
+    width: 100%;
+  }
+
+  .menu .navbar ul li a {
+    padding: 10px 20px;
+    text-align: center;
+    margin: 0;
+  }
+
+  #menu:checked ~ .navbar {
+    display: flex;
+  }
+
+  header {
+    min-height: 30vh;
+    padding: 50px 0;
+    background-position: center;
+  }
+
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .header-content img {
+    max-width: 300px;
+  }
+
+  .form {
+    margin-top: -50px;
+    padding: 1.5em;
+  }
+
+  .caja {
+    padding: 10px;
+  }
+
+  .textbox-main {
+    flex-direction: column;
+  }
+
+  .textarea-container {
+    width: 100%;
+  }
+
+  .msgA,
+  .msgU {
+    min-width: 100%;
+    margin: 10px 0;
+  }
+}

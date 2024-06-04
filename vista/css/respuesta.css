@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: cursive, Gothic;
+}
+
+body {
+    background-color: #ededed;
+}
+
+form {
+    width: 90%; /* Ajusta el ancho al 90% del contenedor principal */
+    max-width: 700px; /* Establece un ancho máximo */
+    margin: auto;
+    background-color: #DFDFDF;
+    margin-top: 100px;
+    padding: 20px; /* Añade un poco de relleno para mejorar la apariencia */
+    box-sizing: border-box; 
+}
+
+input, textarea {
+    margin: 15px 0; /* Reduce el margen superior e inferior */
+    padding: 10px;
+    width: 100%; /* Haz que el ancho sea el 100% del contenedor */
+    font-size: 18px;
+    border: none;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 300px;
+    resize: vertical; /* Permite que el textarea se redimensione verticalmente */
+}
+
+@media screen and (max-width: 480px) {
+    /* Estilos específicos para dispositivos con una pantalla de 480px de ancho o menos */
+    form {
+        width: 100%; /* Haz que el formulario ocupe todo el ancho del viewport */
+        padding: 10px; /* Reduzca el relleno para mejorar la apariencia en dispositivos más pequeños */
+    }
+
+    input, textarea {
+        padding: 8px;
+        font-size: 16px; /* Reduzca el tamaño de la fuente para dispositivos más pequeños */
+    }
+}
