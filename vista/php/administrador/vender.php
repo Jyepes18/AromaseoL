@@ -156,11 +156,12 @@ include("../../../modelo/sessiones/verificacion.php");
                     <div class="row mt-4">
                         <div class="col-md-6">
                             <label for="nombre" class="form-label">Nombre:</label>
-                            <input type="text" class="form-control" name="nombre" required>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required autocomplete="given-name" />
                         </div>
+
                         <div class="col-md-6">
                             <label for="apellido" class="form-label">Apellido:</label>
-                            <input type="text" class="form-control" name="apellido" required>
+                            <input type="text" class="form-control" id="apellido" name="apellido" required>
                         </div>
                     </div>
 
@@ -174,30 +175,30 @@ include("../../../modelo/sessiones/verificacion.php");
                             <input type="number" class="form-control" id="cantidad" name="cantidad[]" min="1" required>
                         </div>
                         <div class="col-md-3">
-                            <label for="precio" class="form-label">Precio unitario:</label>
-                            <input type="number" class="form-control" id="precio" name="precio[]" min="0.01" step="0.01" required>
+                            <label for="precio[]" class="form-label">Precio unitario:</label>
+                            <input type="number" class="form-control" id="precio[]" name="precio[]" min="0.01" step="0.01" required>
                         </div>
                         <div class="col-md-6">
-                            <label for="total">Total:</label>
-                            <input type="text" class="form-control total" name="total[]" id="totalProducto0">
+                            <label for="total[]">Total:</label>
+                            <input type="text" class="form-control total" name="total[]" id="total[]">
                         </div>
                     </div>
 
                     <div class="row mt-4">
                         <div class="col-md-6">
                             <label for="fecha" class="form-label">Fecha:</label>
-                            <input type="date" class="form-control" name="fecha" required>
+                            <input type="date" id="fecha" name="fecha" class="form-control" required autocomplete="on">
                         </div>
                         <div class="col-md-6">
                             <label for="direccion" class="form-label">Dirección:</label>
-                            <input type="text" class="form-control" name="direccion" required>
+                            <input type="text" class="form-control" name="direccion" id="direccion" required>
                         </div>
                     </div>
 
                     <div class="row mt-4">
                         <div class="col-md-12">
                             <label for="email" class="form-label">Correo electrónico:</label>
-                            <input type="email" class="form-control" name="email" required>
+                            <input type="email" class="form-control" name="email" id="email" required autocomplete="email">
                         </div>
                     </div>
 

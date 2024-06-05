@@ -139,6 +139,10 @@ header {
   color: #4BB2F7;
 }
 
+p{
+  text-align: justify;
+}
+
 .wrapper {
   display: flex;
   width: 70%;

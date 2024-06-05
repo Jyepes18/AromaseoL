@@ -129,7 +129,7 @@ $total_general = 0;
                             echo "<tr>";
                             echo "<td>" . htmlspecialchars($row["fecha"]) . "</td>";
                             echo "<td>" . htmlspecialchars_decode($row["productos"]) . "</td>";
-                            echo "<td>" . htmlspecialchars_decode($row["precios_unitarios"]) . "</td>";
+                            echo "<td>$" . number_format($row["precios_unitarios"],0,'','.') . "</td>";
                             echo "<td>" . htmlspecialchars($row["total_cantidad"]) . "</td>";
                             echo "<td>$" . number_format($row["total_general"], 0, '', '.') . "</td>";
                             echo "</tr>";
